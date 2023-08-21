@@ -1,0 +1,104 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+	<meta content="charset=UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Reset Password Akun Informatics Festival (IFest) #8</title>
+	<style>
+		.tb {
+			/*display*/
+			width: 60vw;
+			height: 11vw;
+			padding: 1vw;
+			background-color: #e5e5e5;
+			/*border*/
+			border: 0.1vw #FF6A00;
+			border-style: solid outset outset solid;
+			border-radius: 1vw;
+		}
+
+		.tbLg {
+			/*display*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.tbBtCa {
+			/*display*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 5vw;
+		}
+
+		.tbBt {
+			/*display*/
+			display: inline-block;
+			width: auto;
+			padding: 0.5vw 1vw;
+			background-color: #0D0D0D;
+			/*border*/
+			border: 0.1vw solid #000000;
+			border-radius: 0.4vw;
+			mso-border-alt: none;
+		}
+
+		.tbBtTx {
+			/*font*/
+			font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 1.5vw;
+			font-weight: 700;
+			text-align: center;
+			text-decoration: none;
+			word-break: keep-all;
+			color: #FFFFFF;
+		}
+
+		.tbBt:hover,
+		.tbBtTx:hover {
+			/*font*/
+			font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 1.5vw;
+			font-weight: 700;
+			text-align: center;
+			text-decoration: none;
+			word-break: keep-all;
+			color: #EABA34;
+		}
+
+		.tbTxAl {
+			/*display*/
+			margin: 5vw 0;
+		}
+	</style>
+
+</head>
+
+<body>
+	<table class="tb" align="center" width="570">
+		<tbody>
+			<tr>
+				<td>
+					<div class="tbLg">
+						<img width="300vw" height="100vw"
+							src="https://sistema.gruporoveri.com.br/imagens/logo_email_grupo_roveri.jpg">
+					</div>
+					<h1>Ol&aacute; {{.FirstName}},</h1>
+					<p>Sua senha de acesso ao EasyCollector est&aacute; prestes a expirar. Por favor, clique no link abaixo para
+						redefini-la.</p>
+					<div class="tbBtCa">
+						<button type="submit" class="tbBt">
+							<h1 class="tbBtTx">Redefinir aqui</h1>
+						</button>
+					</div>
+					<p class="tbTxAl"><strong>N&atilde;o compartilhe sua senha.</strong></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>{{.Tracker}}</p>
+</body>
+
+</html>

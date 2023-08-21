@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		* {
+			/*display*/
+			position: relative;
+			margin: 0;
+			padding: 0;
+		}
+
+		#sc {
+			/*display*/
+			position: relative;
+			width: auto;
+			height: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			padding: 1vw;
+			flex-flow: column nowrap;
+			background: url('./geralBg.jpg');
+			background-size: cover;
+			/*border*/
+			border-radius: 10vw;
+		}
+
+		.scIm {
+			/*display*/
+			display: flex;
+			position: relative;
+			width: 10vw;
+			height: auto;
+			margin: auto;
+			padding: 0;
+			padding-top: 1vw;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.scTt {
+			/*font*/
+			font-family: arial;
+			font-size: 2vw;
+			text-align: left;
+			text-shadow: 0 0 1vw #120826;
+			color: #FFFFFF;
+			/*display*/
+			position: relative;
+			width: auto;
+			height: auto;
+			margin: 0;
+			margin-top: 2vw;
+			padding: 0 5vw;
+		}
+
+		.scTx {
+			/*font*/
+			font-family: arial;
+			font-size: 1.25vw;
+			font-weight: 700;
+			text-align: justify;
+			text-shadow: 1vw 1vw 2vw #120826;
+			color: #FFFFFF;
+			/*display*/
+			position: relative;
+			width: auto;
+			height: auto;
+			margin: 4vw 0;
+			padding: 0 5vw;
+		}
+
+		.scLs {
+			/*font*/
+			font-size: 1.25vw;
+			text-align: left;
+			color: #FFFFFF;
+			/*display*/
+			position: relative;
+			width: auto;
+			height: auto;
+			margin: 0;
+			margin-top: 4vw;
+			margin-left: 2vw;
+			padding: 0 5vw;
+		}
+
+		.scIt {
+			/*font*/
+			font-family: arial;
+			font-size: 1.25vw;
+			text-align: left;
+			list-style-type: none;
+			color: #FFFFFF;
+			/*display*/
+			position: relative;
+			width: 50%;
+			height: auto;
+			margin: 0;
+			padding: 0.5vw;
+		}
+	</style>
+</head>
+
+<body>
+	<section id="sc">
+		<img class="scIm" src="./logoPic.png">
+		<h1 class="scTt">Dados preenchidos no Formulário de Inscrição:</h1>
+		<ul class="scLs">
+			<li class="scIt">Nome: {Nome}</li>
+			<li class="scIt">Endereço: {Endereço}</li>
+			<li class="scIt">N° do Endereço: {n°}</li>
+			<li class="scIt">Complemento do Endereço: {Local}</li>
+			<li class="scIt">CEP: {CEP}</li>
+			<li class="scIt">Possui Ensino Médio: {Sim ou Não}</li>
+			<li class="scIt">CPF: {CPF}</li>
+			<li class="scIt">E-mail: {Email}</li>
+			<li class="scIt">Telefone: {Telefone}</li>
+		</ul>
+		<p class="scTx">Segue abaixo o currículo do interessado para vaga de Jurídico para o cargo de Analista Jurídico
+			Pleno:</p>
+	</section>
+</body>
+
+</html>

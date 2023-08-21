@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html>
+<!--======================================================-->
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>replit</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	
+		<!-- Google Tag Manager -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/4.9.3/typescript.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tslib/2.4.1/tslib.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.5.7/rxjs.umd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular/12.2.17/core.umd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-aria/1.8.3/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-animate/1.8.3/angular-animate.min.js"></script>
+		<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-58VT86M"></script>
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-58VT86M');
+		</script>
+		<!-- End Google Tag Manager -->
+		<script>
+			document['hasMessageReceiver'] = true;
+		</script>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Meu RH | TOTVS S.A.</title>
+		<base href="./">
+		<meta name="theme-color" content="#0C9ABE">
+		<meta name="description" content="Meu RH | Portal | TOTVS">
+		<meta name="keywords" content="totvs">
+		<meta name="author" content="totvs">
+		<meta name="viewport"
+			content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Expires" content="0">
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>		
+	
+		<style>
+			:root {
+				--blue: #007bff;
+				--indigo: #6610f2;
+				--purple: #6f42c1;
+				--pink: #e83e8c;
+				--red: #dc3545;
+				--orange: #fd7e14;
+				--yellow: #ffc107;
+				--green: #28a745;
+				--teal: #20c997;
+				--cyan: #17a2b8;
+				--white: #fff;
+				--gray: #6c757d;
+				-gray-dark: #343a40;
+				--primary: #007bff;
+				--secondary: #6c757d;
+				--success: #28a745;
+				--info: #17a2b8;
+				--warning: #ffc107;
+				--danger: #dc3545;
+				--light: #f8f9fa;
+				--dark: #343a40;
+				--breakpoint-xs: 0;
+				--breakpoint-sm: 576px;
+				--breakpoint-md: 768px;
+				--breakpoint-lg: 992px;
+				--breakpoint-xl: 1200px;
+				--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+			}
+	
+			@font-face {
+	  		font-family: NunitoSans;
+			  src: url(NunitoSans.ttf);
+			}
+	
+			@font-face {
+	  		font-family: NunitoSans-ExtraLight;
+			  src: url(NunitoSans-ExtraLight.ttf);
+			}
+	
+			@font-face {
+	  		font-family: NunitoSans-Bold;
+			  src: url(NunitoSans-Bold.ttf);
+			}
+	
+			html {
+				font-family: sans-serif;
+				line-height: 1.15;
+				-webkit-text-size-adjust: 100%;
+				-webkit-tap-highlight-color: transparent;
+			}
+	
+			body {
+				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+				font-size: 1rem;
+				font-weight: 400;
+				line-height: 1.5;
+				color: #212529;
+				text-align: left;
+				background-color: #fff;
+			}
+	
+			@media print {
+	
+				*,
+				:after,
+				:before {
+					text-shadow: none !important;
+					box-shadow: none !important;
+				}
+	
+				@page {
+					size: a3;
+				}
+	
+				body {
+					min-width: 992px !important;
+				}
+			}
+	
+			*,
+			:after,
+			:before {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+	
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+			}
+	
+			body {
+				font-family: NunitoSans;
+			}
+	
+			@media screen and (max-width:1200px) {}
+	
+			@font-face {
+				font-family: NunitoSans;
+				src: url(NunitoSans-Regular.cb66302a95370933dbfb.ttf);
+				font-weight: 400;
+				font-style: normal;
+			}
+	
+			body {
+				padding-top: env(safe-area-inset-top);
+			}
+		</style>
+	
+		<link rel="stylesheet" href="styles.1c84afd067f4eb62904e.css" media="all" onload="this.media='all'">
+		<noscript>
+			<link rel="stylesheet" href="styles.1c84afd067f4eb62904e.css">
+		</noscript>
+	
+		<style>
+			.onpage[_ngcontent-hsp-c326] {
+				background: #ffffff;
+				padding: 0 16px;
+				min-height: calc(100vh - 60px);
+				height: 100%
+			}
+	
+			.context-body[_ngcontent-hsp-c326] {
+				background-color: #fbfbfb;
+				color: #4a5c60;
+				display: none;
+				height: 164px;
+				overflow-x: auto;
+				overflow-y: hidden;
+				padding: 8px;
+				white-space: nowrap;
+				width: auto
+			}
+	
+			.align-menu-icons[_ngcontent-hsp-c326] {
+				padding: 0 9px
+			}
+	
+			.context-body[_ngcontent-hsp-c326]>div.po-row[_ngcontent-hsp-c326] {
+				display: block !important
+			}
+	
+			.context-body[_ngcontent-hsp-c326]>div.po-row[_ngcontent-hsp-c326]>div[_ngcontent-hsp-c326]:not(.po-row) {
+				height: 130px
+			}
+	
+			[_ngcontent-hsp-c326]:: -webkit-scrollbar {
+				height: 0
+			}
+	
+			.dropdown-menu-position[_ngcontent-hsp-c326] {
+				position: fixed !important
+			}
+	
+			.dropdown-menu[_ngcontent-hsp-c326] {
+				left: auto !important;
+				padding: 5px 0 0;
+				top: 10px !important
+			}
+	
+			.dropdown[_ngcontent-hsp-c326] {
+				width: auto;
+				z-index: 200
+			}
+	
+			.context-span-label[_ngcontent-hsp-c326] {
+				color: #e6e6fa;
+				font-size: 12px;
+				font-weight: 700
+			}
+	
+			.context-span-value[_ngcontent-hsp-c326] {
+				color: #4a5c60;
+				font-size: 12px;
+				border-radius: 3px;
+				font-weight: bold
+			}
+	
+			.context-span-value-inactive[_ngcontent-hsp-c326] {
+				font-size: 12px;
+				border-radius: 3px font-weight:bold
+			}
+	
+			.context-value-status[_ngcontent-hsp-c326] {
+				font-size: 10px;
+				color: #fff;
+				background: #00b28e;
+				position: relative;
+				top: -2px;
+				padding: 0 3px;
+				border-radius: 3px
+			}
+	
+			.context-value-status-active[_ngcontent-hsp-c326] {
+				font-size: 10px;
+				color: #fff;
+				background: #00b28e;
+				position: relative;
+				top: -2px;
+				padding: 0 3px;
+				border-radius: 3px
+			}
+	
+			.context-value-status-inactive[_ngcontent-hsp-c326] {
+				font-size: 10px;
+				color: #fff;
+				background: #e32d3c;
+				position: relative;
+				top: -2px;
+				padding: 0 3px;
+				border-radius: 3px
+			}
+	
+			.context-value-title[_ngcontent-hsp-c326] {
+				font-size: 20px;
+				color: #4a5c60
+			}
+	
+			.context-item[_ngcontent-hsp-c326] {
+				display: inline-block;
+				float: none;
+				width: 180px;
+				cursor: pointer;
+				padding: 16px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin: 8px;
+				border-radius: 6px
+			}
+	
+			.context-item[_ngcontent-hsp-c326]>p[_ngcontent-hsp-c326] {
+				margin: 0 !important
+			}
+	
+			.panel-primary[_ngcontent-hsp-c326] {
+				width: auto;
+				margin: 0 -16px
+			}
+	
+			.context-item[_ngcontent-hsp-c326]:nth-child(1),
+			.context-item[_ngcontent-hsp-c326]:nth-child(2),
+			.context-item[_ngcontent-hsp-c326]:nth-child(3),
+			.context-item[_ngcontent-hsp-c326]:nth-child(4) {
+				background: #ffffff;
+				border: #dddddd solid 1px
+			}
+	
+			.context-body-1[_ngcontent-hsp-c326],
+			.context-body-2[_ngcontent-hsp-c326],
+			.context-body-3[_ngcontent-hsp-c326],
+			.context-body-4[_ngcontent-hsp-c326] {
+				background: #f0f0f0
+			}
+	
+			.context-item[_ngcontent-hsp-c326]:nth-child(1):hover,
+			.context-item[_ngcontent-hsp-c326]:nth-child(2):hover,
+			.context-item[_ngcontent-hsp-c326]:nth-child(3):hover,
+			.context-item[_ngcontent-hsp-c326]:nth-child(4):hover {
+				background: #ceeaf2;
+				border: rgba(12, 155, 191, .3) solid 1px;
+				transition: all .5s
+			}
+	
+			.context-item-active[_ngcontent-hsp-c326] {
+				background: #ceeaf2 !important;
+				border: rgba(12, 155, 191, .3) solid 1px !important
+			}
+	
+			.context-item-inactive[_ngcontent-hsp-c326] {
+				color: #9da7a9 !important;
+				background: #eceeee !important border:1px solid #b6bdbf !important;
+				pointer-events: none
+			}
+	
+			.context-value-title-inactive[_ngcontent-hsp-c326] {
+				font-size: 20px;
+				color: #9da7a9
+			}
+	
+			.context-button[_ngcontent-hsp-c326] {
+				background-color: #fafafa;
+				margin-left: 5px;
+				z-index: 200;
+				cursor: pointer
+			}
+	
+			#alert-notify-button[_ngcontent-hsp-c326] {
+				z-index: 200
+			}
+	
+			.context-button[_ngcontent-hsp-c326]:hover {
+				background-color: rgba(12, 154, 190, .2);
+				margin-left: 5px;
+				box-shadow: 0 0 rgba(255, 255, 255, 0);
+				transition: all .5s ease
+			}
+	
+			.context-button[_ngcontent-hsp-c326]>img[_ngcontent-hsp-c326] {
+				width: 70%
+			}
+	
+			.menu-current-item[_ngcontent-hsp-c326] a[_ngcontent-hsp-c326] {
+				color: #0c9abe !important
+			}
+	
+			.menu-not-current-item[_ngcontent-hsp-c326] a[_ngcontent-hsp-c326] {
+				color: #bfbfbf !important
+			}
+	
+			.dropdown-toggle[_ngcontent-hsp-c326]:empty:after {
+				display: none !important
+			}
+	
+			.notify[_ngcontent-hsp-c326] {
+				position: relative;
+				float: right;
+				margin: 3px
+			}
+	
+			.notify[_ngcontent-hsp-c326]:hover,
+			.notify[_ngcontent-hsp-c326]:focus {
+				text-decoration: none !important
+			}
+	
+			.notify[data-badge][_ngcontent-hsp-c326]:after {
+				background: #e32d3c;
+				border-radius: 8px;
+				color: #fff;
+				content: attr(data-badge);
+				font-size: 10px;
+				font-weight: normal;
+				height: 16px;
+				line-height: 12px;
+				min-width: 16px;
+				padding: 2px 4px;
+				position: absolute;
+				right: -2px;
+				text-align: center;
+				top: -1px;
+				width: auto
+			}
+	
+			@media only screen and (min-width: 961px) and (max-width: 1366px) {
+				.context-body[_ngcontent-hsp-c326] {
+					padding-left: 60px
+				}
+			}
+	
+			@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+				.onpage[_ngcontent-hsp-c326] {
+					padding: 0 16px;
+					min-height: calc(100vh - 94px);
+					height: 100%
+				}
+			}
+		</style>
+		<style>
+			#version[_ngcontent-hsp-c323] {
+				position: absolute;
+				bottom: 0px;
+				left: 10px;
+				z-index: 999;
+				color: #fff;
+				font-size: 60%;
+				width: 60px;
+				height: 14px
+			}
+		</style>
+		<style>
+			.input-user[_ngcontent-hsp-c268] {
+				margin-top: 7%
+			}
+	
+			.switch[_ngcontent-hsp-c268] {
+				text-align: right;
+				padding: 0
+			}
+	
+			.link[_ngcontent-hsp-c268] {
+				cursor: pointer;
+				font-weight: bold;
+				text-align: center
+			}
+	
+			.totvs-logo[_ngcontent-hsp-c268] {
+				text-align: center
+			}
+	
+			.login-corporate-logo[_ngcontent-hsp-c268] {
+				background-image: url(logo_totvs_login_v2.4a42d6295e6b42a33aba.svg);
+				height: 75px !important;
+				background-position-x: center;
+				background-repeat: no-repeat;
+				width: auto;
+				text-align: center
+			}
+	
+			.text-box[_ngcontent-hsp-c268] {
+				position: relative;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				padding-left: 60px
+			}
+	
+			.text-box[_ngcontent-hsp-c268] span[_ngcontent-hsp-c268] {
+				color: #fff;
+				white-space: normal;
+				white-space: initial;
+				font-size: 50px;
+				font-family: "NunitoSans-ExtraLight"
+			}
+	
+			.welcome[_ngcontent-hsp-c268] {
+				text-align: center;
+				font-size: 34px;
+				font-family: "NunitoSans-ExtraLight";
+				color: #000
+			}
+	
+			[_nghost-hsp-c268] .po-switch-label-right {
+				color: transparent;
+				width: 0px;
+				height: 0px;
+				position: absolute
+			}
+	
+			[_nghost-hsp-c268] .po-switch-content {
+				display: inline-block
+			}
+	
+			[_nghost-hsp-c268] .po-switch-button-on>.po-icon-ok {
+				color: #0c9abe;
+				font-weight: 700;
+				left: -1px;
+				position: relative;
+				top: 0px !important;
+				font-size: 18px !important
+			}
+	
+			[_nghost-hsp-c268] .po-switch-button-off>.po-icon-close {
+				color: #dadedf;
+				font-weight: 700;
+				left: -1px;
+				position: relative;
+				top: 0px !important;
+				font-size: 18px !important
+			}
+	
+			body {
+				overflow-x: hidden
+			}
+	
+			.img-landing-page[_ngcontent-hsp-c268] {
+				color: #fff;
+				font-size: 30px;
+				font-family: "NunitoSans";
+				padding-left: 20px
+			}
+	
+			.text-image[_ngcontent-hsp-c268] {
+				position: absolute;
+				top: 50%;
+				width: 50%
+			}
+	
+			.remember-user[_ngcontent-hsp-c268] {
+				line-height: 32px;
+				text-align: right
+			}
+	
+			.remember-user-container[_ngcontent-hsp-c268] {
+				margin-bottom: 16px
+			}
+	
+			.footer[_ngcontent-hsp-c268] {
+				position: fixed;
+				height: 50px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				margin-bottom: 5px;
+				width: 50%
+			}
+	
+			.totvs-logo-grey[_ngcontent-hsp-c268] {
+				background: url(totvs-logo-grey.290fa489ffa16ed96133.svg) no-repeat center center;
+				height: 40px
+			}
+	
+			.totvs-language[_ngcontent-hsp-c268] {
+				height: 40px
+			}
+	
+			.login-button[_ngcontent-hsp-c268] {
+				margin-bottom: 5%
+			}
+	
+			.forgot-password[_ngcontent-hsp-c268] {
+				color: #0c9abe;
+				padding-bottom: 5px;
+				cursor: pointer;
+				font-weight: bold;
+				text-align: center
+			}
+	
+			.login-info-erp[_ngcontent-hsp-c268] {
+				font-size: 24px;
+				line-height: 32px;
+				text-align: center;
+				color: #0c9abe;
+				margin-top: 5%
+			}
+	
+			.login-info[_ngcontent-hsp-c268] {
+				font-size: 20px;
+				text-align: center
+			}
+	
+			.img-landing-page[_ngcontent-hsp-c268] {
+				max-width: 50%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+				-o-object-position: 15%;
+				object-position: 15%;
+				position: absolute;
+				-webkit-filter: contrast(50%) brightness(80%);
+				filter: contrast(50%) brightness(80%)
+			}
+	
+			.login-side-image[_ngcontent-hsp-c268] {
+				background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(login-page-v2.67d56ac3deb987d5a4d4.jpg);
+				background-size: cover;
+				background-position: 30%;
+				height: 100%;
+				max-width: 50%;
+				position: absolute;
+				translate: 0, -50%;
+				left: 50%;
+				padding: 0
+			}
+	
+			.layer[_ngcontent-hsp-c268] {
+				background-color: rgba(248, 247, 216, .702);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%
+			}
+	
+			.login-container[_ngcontent-hsp-c268] {
+				height: 100vh
+			}
+	
+			.login-form[_ngcontent-hsp-c268] {
+				clear: both;
+				height: auto;
+				max-width: 320px
+			}
+	
+			.external-provider[_ngcontent-hsp-c268] {
+				font-family: NunitoSans-Bold, sans-serif;
+				font-size: 16px;
+				line-height: 24px;
+				border: 1px solid #0c9abe;
+				border-radius: 3px;
+				color: #0c9abe;
+				display: inline-block;
+				height: 44px;
+				padding: 0 16px;
+				cursor: pointer;
+				text-align: center;
+				background: white;
+				width: 100%;
+				margin-bottom: 10px
+			}
+	
+			.external-image[_ngcontent-hsp-c268] {
+				margin-right: 12px;
+				width: 35px
+			}
+	
+			.separator[_ngcontent-hsp-c268] {
+				color: #9b9b9b !important;
+				padding-bottom: 15px
+			}
+	
+			@media screen and (max-width: 1366px) {
+				[_nghost-hsp-c268] .po-switch-content {
+					padding: 0
+				}
+	
+				.text-box[_ngcontent-hsp-c268] span[_ngcontent-hsp-c268] {
+					font-size: 34px;
+					font-family: "NunitoSans-ExtraLight"
+				}
+			}
+	
+			@media screen and (max-width: 960px) {
+				.img-landing-page[_ngcontent-hsp-c268] {
+					display: none
+				}
+	
+				.login-side-image[_ngcontent-hsp-c268] {
+					display: none
+				}
+	
+				.input[_ngcontent-hsp-c268] {
+					margin: 0;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					width: calc(100% - 32px)
+				}
+	
+				.welcome[_ngcontent-hsp-c268] {
+					text-align: center;
+					font-size: 20px;
+					font-family: "NunitoSans-Bold";
+					color: #000
+				}
+	
+				.text-box[_ngcontent-hsp-c268] span[_ngcontent-hsp-c268] {
+					display: none
+				}
+	
+				.footer[_ngcontent-hsp-c268] {
+					width: 100% !important
+				}
+			}
+	
+			@media screen and (min-width: 961px) {
+				.input[_ngcontent-hsp-c268] {
+					margin: 0;
+					position: absolute;
+					top: 48%;
+					left: 25%;
+					-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%)
+				}
+			}
+	
+			@media screen and (min-width: 1367px) {
+				.input[_ngcontent-hsp-c268] {
+					margin-top: 55px
+				}
+	
+				.remember-user[_ngcontent-hsp-c268] {
+					margin-top: 30px;
+					line-height: 0px
+				}
+			}
+	
+			@media screen and (min-width: 481px),
+			(max-width: 960px) {
+				.totvs-logo[_ngcontent-hsp-c268] {
+					height: 149px;
+					width: 300px
+				}
+	
+				.login-corporate-logo[_ngcontent-hsp-c268] {
+					background-image: url(logo_totvs_login_v2.4a42d6295e6b42a33aba.svg);
+					width: 100%;
+					height: 100px
+				}
+			}
+	
+			[_nghost-hsp-c268] .po-select-button {
+				background-color: rgba(0, 0, 0, 0) !important;
+				border: rgba(0, 0, 0, 0) !important;
+				box-shadow: none !important;
+				padding-left: 0 !important;
+				width: 25%;
+				left: 45%;
+				font-size: 14px
+			}
+	
+			.forceOauth[_ngcontent-hsp-c268] {
+				margin-top: 30px;
+				margin-bottom: 30px
+			}
+	
+			.buttonLarge[_ngcontent-hsp-c268] {
+				height: 68px !important
+			}
+		</style>
+		<style>
+			.modal-footer-recovery-options[_ngcontent-hsp-c266] {
+				overflow: auto;
+				margin-top: 25px;
+				margin-bottom: 25px
+			}
+	
+			.button-recovery[_ngcontent-hsp-c266] {
+				margin-top: 17px;
+				margin-bottom: 10px
+			}
+	
+			.button-cancel[_ngcontent-hsp-c266] {
+				margin-bottom: 17px
+			}
+	
+			.input-recovery[_ngcontent-hsp-c266] {
+				margin-bottom: 5px
+			}
+	
+			.dialog-substitute-content[_ngcontent-hsp-c266] {
+				height: 350px
+			}
+	
+			.message-recovery[_ngcontent-hsp-c266] {
+				position: fixed;
+				left: 50%;
+				top: 40%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%)
+			}
+	
+			.recovery-image-success[_ngcontent-hsp-c266] {
+				background: url(success.8b4116fbb4d6691356b7.png) no-repeat center;
+				width: 100%;
+				height: 64px;
+				margin-bottom: 20px
+			}
+	
+			.message-recovery[_ngcontent-hsp-c266] {
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				padding-left: 10%;
+				padding-right: 10%
+			}
+	
+			@media only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min--moz-device-pixel-ratio: 2),
+			only screen and (-o-min-device-pixel-ratio: 2/1) {
+				.recovery-image-success[_ngcontent-hsp-c266] {
+					background: url(success@2x.3ef849f18cc8db5e719a.png) no-repeat center;
+					width: 100%;
+					height: 64px;
+					background-size: contain
+				}
+			}
+	
+			@media (min-width: 961px) {
+				.dialog-recovery-content[_ngcontent-hsp-c266] {
+					height: 300px
+				}
+	
+				.message-recovery[_ngcontent-hsp-c266] {
+					position: fixed;
+					left: 50%;
+					top: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%)
+				}
+	
+				.input[_ngcontent-hsp-c266] {
+					position: relative;
+					left: 25%;
+					margin-top: 40px;
+					padding-top: 10px
+				}
+	
+				[_nghost-hsp-c266] .po-modal-sm {
+					width: 30%
+				}
+			}
+	
+			@media screen and (max-width: 960px) {
+				.img-landing-page[_ngcontent-hsp-c266] {
+					display: none
+				}
+	
+				.input[_ngcontent-hsp-c266] {
+					margin: 0;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%)
+				}
+	
+				.text-box[_ngcontent-hsp-c266] span[_ngcontent-hsp-c266] {
+					display: none
+				}
+	
+				[_nghost-hsp-c266] .po-modal-sm {
+					width: 85%
+				}
+			}
+	
+			@media screen and (min-width: 1367px) {
+				.input[_ngcontent-hsp-c266] {
+					margin-top: 55px
+				}
+	
+				[_nghost-hsp-c266] .po-modal-sm {
+					width: 25%
+				}
+			}
+	
+			[_nghost-hsp-c266] .po-modal-title {
+				font-size: 20px;
+				padding-left: 6px
+			}
+	
+			[_nghost-hsp-c266] .po-modal-header-close-button {
+				color: #1ea2c3
+			}
+	
+			[_nghost-hsp-c266] .po-modal-footer {
+				display: none
+			}
+		</style>
+		<style>
+			.modal-footer-recovery-options[_ngcontent-hsp-c265] {
+				overflow: auto;
+				margin-top: 35px;
+				margin-bottom: 25px
+			}
+	
+			.dialog-substitute-content[_ngcontent-hsp-c265] {
+				height: 350px
+			}
+	
+			.message-recovery[_ngcontent-hsp-c265] {
+				position: fixed;
+				left: 50%;
+				top: 40%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%)
+			}
+	
+			.recovery-image-success[_ngcontent-hsp-c265] {
+				background: url(success.8b4116fbb4d6691356b7.png) no-repeat center;
+				width: 100%;
+				height: 64px;
+				margin-bottom: 20px
+			}
+	
+			.message-recovery[_ngcontent-hsp-c265] {
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				padding-left: 10%;
+				padding-right: 10%
+			}
+	
+			@media only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min--moz-device-pixel-ratio: 2),
+			only screen and (-o-min-device-pixel-ratio: 2/1) {
+				.recovery-image-success[_ngcontent-hsp-c265] {
+					background: url(success@2x.3ef849f18cc8db5e719a.png) no-repeat center;
+					width: 100%;
+					height: 64px;
+					background-size: contain
+				}
+			}
+	
+			@media (min-width: 961px) {
+				.dialog-recovery-content[_ngcontent-hsp-c265] {
+					height: 300px
+				}
+	
+				.message-recovery[_ngcontent-hsp-c265] {
+					position: fixed;
+					left: 50%;
+					top: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%)
+				}
+			}
+	
+			@media screen and (max-width: 960px) {
+				.img-landing-page[_ngcontent-hsp-c265] {
+					display: none
+				}
+	
+				.text-box[_ngcontent-hsp-c265] span[_ngcontent-hsp-c265] {
+					display: none
+				}
+			}
+	
+			[_nghost-hsp-c265] .po-modal-title {
+				font-size: 20px
+			}
+	
+			[_nghost-hsp-c265] .po-modal-header-close-button {
+				padding-left: 10px
+			}
+	
+			[_nghost-hsp-c265] .po-modal-footer {
+				display: none
+			}
+		</style>
+		<style>
+			.overlay[_ngcontent-hsp-c234] {
+				height: 0%;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				background-color: #fff;
+				transition: 1.5s;
+				z-index: 1000;
+				border-radius: 0;
+				padding: 0 16px
+			}
+	
+			.overlay-content[_ngcontent-hsp-c234] {
+				position: relative;
+				top: 25%;
+				width: 100%;
+				text-align: center;
+				margin-top: 30px
+			}
+	
+			.overlay[_ngcontent-hsp-c234] a[_ngcontent-hsp-c234] {
+				padding: 8px;
+				text-decoration: none;
+				font-size: 36px;
+				color: #818181;
+				display: block;
+				transition: .3s
+			}
+	
+			.overlay[_ngcontent-hsp-c234] a[_ngcontent-hsp-c234]:hover,
+	
+			.overlay[_ngcontent-hsp-c234] a[_ngcontent-hsp-c234]:focus {
+				color: #f1f1f1
+			}
+	
+			.overlay[_ngcontent-hsp-c234] .closebtn[_ngcontent-hsp-c234] {
+				position: absolute;
+				top: -11px;
+				right: 5px;
+				cursor: pointer
+			}
+	
+			.backgroundColor[_ngcontent-hsp-c234] {
+				z-index: 200;
+				background-color: rgba(5, 45, 62, .702);
+				height: 100%
+			}
+	
+			.full-screen-dialog[_ngcontent-hsp-c234] {
+				height: 100%;
+				overflow: auto
+			}
+	
+			@media only screen and (max-width: 480px) {
+				.full-screen-dialog[_ngcontent-hsp-c234] {
+					height: 100vh;
+					overflow: auto;
+					padding-bottom: 76px
+				}
+			}
+	
+			@media (min-width: 961px) {
+				.full-screen-dialog[_ngcontent-hsp-c234] {
+					height: auto;
+					top: 50%;
+					left: 50%;
+					width: 640px;
+					-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					padding-bottom: 1.5em;
+					border-radius: 3px overflow:unset
+				}
+			}
+	
+			@media (min-width: 480px) {
+				.overlay[_ngcontent-hsp-c234] .closebtn[_ngcontent-hsp-c234] {
+					position: absolute;
+					top: 30px;
+					right: 35px;
+					cursor: pointer
+				}
+			}
+		</style>
+	
+	</head>
+<!--======================================================-->
+	<body>
+		<script src="script.js"></script>
+	
+		<!-- Google Tag Manager (noscript)-->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=''GTM-58VT86M'" height="0" width="0"
+				style="display: none; visibility: hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+	
+		<app-root _nghost-hsp-c326="" ng-version="12.2.8">
+			<!---->
+			<!---->
+			<div _ngcontent-hsp-c326="">
+				<div _ngcontent-hsp-c326="">
+					<app-login _ngcontent-hsp-c326="" _nghost-hsp-c268="">
+						<div _ngcontent-hsp-c268="" class="po-sm-12 po-md-6 po-lg-6 po-xl-6 login-container">
+							<div _ngcontent-hsp-c268="" class="input login-form">
+								<div _ngcontent-hsp-c268="" class="login-corporate-logo"></div>
+								<span _ngcontent-hsp-c268="" class="po-sm-12 po-md-12 po-lg-12 po-xl-12 welcome">MEU RH </span>
+								<span _ngcontent-hsp-c268="" class="po-sm-12 po-md-12 po-lg-12 po-xl-12 login-info-erp">Boas-vindas</span>
+								<form _ngcontent-hsp-c268="" novalidate="" class="ng-pristine ng-invalid ng-touched">
+									<po-input _ngcontent-hsp-c268="" p-clean="true" p-disabled="false" p-auto-focus="true"
+										p-icon="po-icon po-icon-user" name="user" p-required="true"
+										class="po-sm-12 po-md-12 po-lg-12 po-xl-12 input-user ng-pristine ng-invalid ng-touched">
+										<po-field-container>
+											<div class="po-field-container">
+												<div class="po-field-container-title">
+													<span class="po-field-title"></span>
+													<!---->
+												</div>
+												<!---->
+												<div class="po-field-container-content">
+													<div class="po-field-icon-container-left">
+														<po-icon class="po-field-icon">
+															<i class='bx bx-user' style='color:#0c9abe' ></i>
+															<!---->
+															<!---->
+														</po-icon>
+													</div>
+													<!---->
+													<input class="po-input po-input-icon-left po-input-icon-right" autocomplete="on"
+														placeholder="Informe o seu usuário" required="" type="text" name="user"
+														style="padding-right: 36px;">
+													<div class="po-field-icon-container-right">
+														<po-clean>
+															<!---->
+														</po-clean>
+														<!---->
+													</div>
+												</div>
+												<po-field-container-bottom>
+													<div class="po-field-container-bottom">
+														<!---->
+													</div>
+												</po-field-container-bottom>
+											</div>
+										</po-field-container>
+									</po-input>
+									<po-password _ngcontent-hsp-c268="" name="password" p-icon="po-icon po-icon-lock" p-required="true"
+										p-no-autocomplete="true"
+										class="po-sm-12 po-md-12 po-lg-12 po-xl-12 ng-untouched ng-pristine ng-invalid">
+										<po-field-container>
+											<div class="po-field-container">
+												<div class="po-field-container-title">
+													<span class="po-field-title"></span>
+													<!---->
+												</div>
+												<!---->
+												<div class="po-field-container-content">
+													<div class="po-field-icon-container-left">
+														<span><i class='bx bx-lock' style='color:#0c9abe' ></i></span>
+													</div>
+													<input class="po-input po-input-icon-left po-input-icon-right" autocomplete="new-password"
+														placeholder="Informe sua senha" required="" type="password" name="password">
+													<div class="po-field-icon-container-right">
+														<!---->
+														<span><i class='bx bx-low-vision' style='color:#0c9abe' ></i></span>
+														<!---->
+													</div>
+												</div>
+												<po-field-container-bottom>
+													<div class="po-field-container-bottom">
+														<!---->
+													</div>
+												</po-field-container-bottom>
+											</div>
+										</po-field-container>
+									</po-password>
+									<div _ngcontent-hsp-c268="" class="po-sm-12 remember-user-container">
+										<span _ngcontent-hsp-c268="" class="po-sm-10 po-md-10 po-lg-10 po-xl-10 remember-user">Login
+											automático</span>
+										<po-switch _ngcontent-hsp-c268="" p-label-off="" p-label-on="" name="switch"
+											class="switch po-sm-2 po-md-2 po-lg-2 po-xl-2 ng-untouched ng-pristine ng-valid">
+											<po-field-container>
+												<div class="po-field-container">
+													<div class="po-field-container-title">
+														<span class="po-field-title"></span>
+														<!---->
+													</div>
+													<!---->
+													<div class="po-field-container-content po-switch-content" name="switch">
+														<div class="po-switch-container po-clickable po-switch-container-off" tabindex="0">
+															<div class="po-switch-button po-switch-button-off">
+																<span><i class='bx bx-x' style='color:#dadedf; font-size:17px; font-weight:950'></i></span>
+															</div>
+														</div>
+														<span class="po-clickable po-switch-label po-switch-label-right"> false </span>
+													</div>
+													<po-field-container-bottom>
+														<div class="po-field-container-bottom">
+															<!---->
+														</div>
+													</po-field-container-bottom>
+												</div>
+											</po-field-container>
+										</po-switch>
+									</div>
+									<po-button _ngcontent-hsp-c268="" p-type="primary"
+										class="po-sm-12 po-md-12 po-lg-12 po-xl-12 login-button">
+										<button type="button" class="po-button po-text-ellipsis po-button-primary" disabled="">
+											<!---->
+											<!---->
+											<span class="po-button-label" onclick="funcao1()">Entrar</span>
+											<!---->
+										</button>
+									</po-button>
+								</form>
+								<!---->
+								<a _ngcontent-hsp-c268="" class="po-sm-12 po-md-12 po-lg-12 po-xl-12 forgot-password">Esqueceu a senha?
+								</a>
+								<!---->
+								<!---->
+							</div>
+							<!---->
+							<!---->
+							<div _ngcontent-hsp-c268="" class="po-sm-12 po-md-12 po-lg-12 po-xl-12 footer">
+								<div _ngcontent-hsp-c268="" class="po-sm-6 po-md-6 po-lg-6 po-xl-6 totvs-language">
+									<div _ngcontent-hsp-c268="" class="button-language">
+										<po-select _ngcontent-hsp-c268="" name="language"
+											class="button-language ng-untouched ng-pristine ng-valid">
+											<po-field-container>
+												<div class="po-field-container">
+													<div class="po-field-container-title">
+														<span class="po-field-title"></span>
+														<!---->
+													</div>
+													<!---->
+													<select class="po-select" name="language">
+														<!---->
+														<option value="pt"> Português </option>
+														<option value="en"> English </option>
+														<option value="es"> Español </option>
+														<!---->
+													</select>
+													<div class="po-select-container">
+														<div class="po-select-button">
+															<span>Português</span>
+															<div class="po-field-icon-container-right">
+																<span><i class='bx bx-chevron-down' style='color:#0c9abe; font-size:1.2rem'></i></span>
+															</div>
+														</div>
+														<ul class="po-select-content">
+															<li value="0" class="po-select-item-selected">
+																<div class="po-select-item">
+																	<span>Português</span>
+																	<!---->
+																	<!---->
+																	<!---->
+																</div>
+															</li>
+															<li value="0">
+																<div class="po-select-item">
+																	<span>English</span>
+																	<!---->
+																	<!---->
+																	<!---->
+																</div>
+															</li>
+															<li value="0">
+																<div class="po-select-item">
+																	<span>Español</span>
+																	<!---->
+																	<!---->
+																	<!---->
+																</div>
+															</li>
+															<!---->
+														</ul>
+													</div>
+													<po-field-container-bottom>
+														<div class="po-field-container-bottom">
+															<!---->
+														</div>
+													</po-field-container-bottom>
+												</div>
+											</po-field-container>
+										</po-select>
+									</div>
+								</div>
+								<div _ngcontent-hsp-c268="" class="po-sm-6 po-md-6 po-lg-6 po-xl-6 totvs-logo-grey"></div>
+							</div>
+						</div>
+						<div _ngcontent-hsp-c268="" class="po-sm-6 po-md-6 po-lg-6 po-xl-6 login-side-image">
+							<div _ngcontent-hsp-c268="" class="text-box po-sm-6 po-md-6 po-lg-6 po-xl-5">
+								<h2 _ngcontent-hsp-c268="">
+									<span _ngcontent-hsp-c268="">O seu RH muito mais próximo de você!</span>
+								</h2>
+							</div>
+						</div>
+						<app-password-recovery _ngcontent-hsp-c268="" _nghost-hsp-c266="">
+							<po-modal _ngcontent-hsp-c266="" p-size="sm" class="po-sm-12 po-md-12 po-lg-12 po-xl-12">
+								<!---->
+							</po-modal>
+							<app-dialog _ngcontent-hsp-c266="" id="recovery-password-confirm" _nghost-hsp-c234="">
+								<!---->
+								<!---->
+							</app-dialog>
+						</app-password-recovery>
+						<app-dts-password-recovery _ngcontent-hsp-c268="" _nghost-hsp-c265="">
+							<po-modal _ngcontent-hsp-c265="" p-size="auto" class="po-sm-12 po-md-12 po-lg-12 po-xl-12">
+								<!---->
+							</po-modal>
+							<app-dialog _ngcontent-hsp-c265="" id="recovery-password-confirm" _nghost-hsp-c234="">
+								<!---->
+								<!---->
+							</app-dialog>
+						</app-dts-password-recovery>
+						<!---->
+						<!---->
+						<!---->
+					</app-login>
+				</div>
+				<!---->
+				<!---->
+			</div>
+			<!---->
+			<!---->
+			<!---->
+			<app-version _ngcontent-hsp-c326="" _nghost-hsp-c323="">
+				<p _ngcontent-hsp-c323="" id="version">
+					<!---->
+				</p>
+			</app-version>
+		</app-root>
+	
+		<script src="runtime-es2015.e49f47198969d6668202.js" type="module"></script>
+		<script src="runtime-es5.e49f47198969d6668202.js" nomodule="" defer=""></script>
+		<script src="polyfills-es5.63b93ddf0358bf8522c6.js" nomodule="" defer=""></script>
+		<script src="polyfills-es2015.93815c67e6a735fb8530.js" type="module"></script>
+		<script src="scripts.d151a2f31adcf01d1121.js" defer=""></script>
+		<script src="vendor-es2015.7d0fbcdaec4053358caf.js" type="module"></script>
+		<script src="vendor-es5.7d0fbcdaec4053358caf.js" nomodule="" defer=""></script>
+		<script src="main-es2015.eae36bce21b6a0091d74.js" type="module"></script>
+		<script src="main-es5.eae36bce21b6a0091d74.js" nomodule="" defer=""></script>
+		<script>
+			function funcao1()
+			{
+			alert("Login inválido. Verifique se o usuário e senha foram digitados corretamente.");
+			}
+		</script>
+	
+	</body>
+<!--======================================================-->
+</html>

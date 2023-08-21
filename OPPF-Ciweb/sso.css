@@ -1,0 +1,146 @@
+html {
+	height: 100%; 
+	width: 100%;
+	overflow: auto;
+}
+body {
+	padding: 0px; 
+	margin: 0px; 
+	background-color: #f4f4f6; 
+    font-family: 'open sans', helvetica, arial;
+	color: #000; 
+}
+img {
+	border: 0px; 
+	margin: 0px; 
+	outline-style: none; 
+	outline-color: invert; 
+	padding-left: 0px; 
+	padding-right: 0px; 
+	padding-top: 0px;
+	outline-width: 0px; 
+	background: none transparent scroll repeat 0% 0%; 
+	font-size: 100%; 
+	vertical-align: baseline; 
+}
+#nav_HEADER {
+	background-color: white; 
+	width: 100%; 
+	height: 78px; 
+	top: 0px; 
+	left: 0px;
+	padding: 25px 0px 0px 21px;
+	border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #e0e0e2;
+	box-sizing: border-box;
+	
+    position: absolute;
+    right: 0px;
+}
+#nav_HEADERL {
+	float:left;
+}
+#nav_HEADERR {
+	float:right;
+}
+#nav_WRAPER  {
+    width: 100%;
+    height: 100%;
+}
+#nav_CONTAINER {
+}
+.container {
+    position: absolute;
+    left: 0px;
+    top: 77px;
+    right: 0px;
+    bottom: 152px;
+	overflow: auto;
+	margin: auto;
+	width: 100%;
+}
+.containerNoFotter {
+    bottom: 0px !important;
+}
+
+.container_full {
+    position: absolute;
+    left: 0px;
+    top: 77px;
+    right: 0px;
+    bottom: 0px;
+	overflow: auto;
+	margin: auto;
+	width: 100%;
+}
+.container_hidden {
+	visibility: hidden;
+}
+#nav_FOOTER {
+	position: absolute; 
+	width: 100%; 
+	bottom: 0px; 
+	background-color: white; 
+	height: 150px; 
+	left: 0px;
+    right: 0px;
+	border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e0e0e2;
+	overflow: auto;
+}
+#navtop {
+	float: left;
+	text-align: left; 	
+	height: 50px;
+}
+#navlogo {
+    float: left;
+}
+#navstripe {
+    background-color: #006bae;
+    width: 1px;
+    height: 26px;
+	margin-left: 15px;
+    float: left;
+    color: #006bae;
+}
+#navtitle {
+    float: left;
+    font-family: 'open sans', helvetica, arial;
+    color: #006bae;
+	margin: -3px 0px 0px 15px;
+	font-size: 24.7px;
+    font-weight: 400;
+}
+#navsigilo {
+    float: left;
+    font-family: 'open sans', helvetica, arial;
+    color: #006bae;
+	margin: 0px 0px 0px 15px;
+	font-size: 20px;
+    font-weight: 600;
+}
+#navlogout {
+    float: right;
+    font-family: 'open sans', helvetica, arial;
+    color: #006bae;
+	margin: 0px 15px 0px 0px;
+	font-size: 14.3px;
+    font-weight: 400;
+	vertical-align: middle;
+}
+#navlogout img {
+	margin: -3px 10px 0px 0px;
+	vertical-align:middle;
+}
+#navlogout > a {
+	font-family: "open sans", sans-serif;
+    font-weight: 400;
+	font-size: 14.3px;
+    color: #058ce1 !important;
+}
+#navlogout > a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}

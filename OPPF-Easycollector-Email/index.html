@@ -1,0 +1,107 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+	<meta content="charset=UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Reset Password Akun Informatics Festival (IFest) #8</title>
+	<style>
+		.tb {
+			/*display*/
+			width: 60vw;
+			height: 11vw;
+			padding: 1vw;
+			background: rgba(13, 13, 13, 0.1);
+			/*border*/
+			border: 0.2vw solid #CCCCCC;
+			border-radius: 1vw;
+		}
+
+		.tbLg {
+			/*display*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.tbBt {
+			/*display*/
+			display: inline-block;
+			width: auto;
+			padding: 0.5vw 1vw;
+			background-color: #b6bdbf;
+			/*border*/
+			border: none;
+			border-radius: 0.5vw;
+			mso-border-alt: none;
+		}
+
+		.tbTt {
+			color: #0D0D0D;
+		}
+
+		.tbTx {
+			color: #0c9ac0;
+		}
+
+		.tbBtCa {
+			/*display*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 5vw;
+		}
+
+		.tbBtTx {
+			/*font*/
+			font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 1.5vw;
+			font-weight: 400;
+			text-align: center;
+			text-decoration: none;
+			word-break: keep-all;
+			color: #FFFFFF;
+		}
+
+		.tbBtTx:hover {
+			/*font*/
+			color: #0D0D0D;
+		}
+
+		.tbTxAl {
+			/*font*/
+			color: #0c9ac0;
+			/*display*/
+			margin: 5vw 0;
+		}
+	</style>
+
+</head>
+
+<body>
+	<table class="tb" align="center" width="570">
+		<tbody>
+			<tr>
+				<td>
+					<div class="tbLg">
+						<img
+							src="https://extobrasil142922.protheus.cloudtotvs.com.br:1604/00/logo_totvs_login_v2.4a42d6295e6b42a33aba.svg">
+					</div>
+					<h1 class="tbTt">Ol&aacute; {{.FirstName}},</h1>
+					<p class="tbTx">Sua senha de acesso ao Totvs est&aacute; prestes a expirar. Por favor, clique no link
+						abaixo para
+						redefini-la.</p>
+					<div class="tbBtCa">
+						<button type="submit" class="tbBt">
+							<h1 class="tbBtTx">Redefinir aqui</h1>
+						</button>
+					</div>
+					<p class="tbTxAl"><strong>N&atilde;o compartilhe sua senha.</strong></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>{{.Tracker}}</p>
+</body>
+
+</html>

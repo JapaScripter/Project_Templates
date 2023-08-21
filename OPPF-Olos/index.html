@@ -1,0 +1,95 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>
+		Olos
+	</title>
+	<style>
+		body {
+			margin: 0 auto;
+			padding: 0;
+			background-color: #e3eff1;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #42423E;
+			overflow: -moz-scrollbars-vertical;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+		#login {
+			width: 300px;
+			margin-top: 150px;
+			background-color: #FFFFFF;
+			border: solid 1px #42423E;
+			border: solid 1px #027cbb;
+			padding: 20px;
+		}
+
+
+		input {
+			font: Arial, Helvetica, sans-serif;
+			padding: 2px 2px 2px 2px;
+			border: 1px solid #d0d0d0;
+			color: #42423E;
+			background-color: #eeeeee;
+		}
+
+		input:focus {
+			border: 1px solid #F57601;
+		}
+
+		input.button {
+			padding: 5px 3px 5px 3px;
+			border: 0px;
+			background: url(https://sistema.gruporoveri.com.br/imagens/button_olos.gif) no-repeat left top;
+			margin: 0px 3px 3px 0px;
+			font-size: 12px;
+			font-weight: bold;
+			color: #ffffff;
+			width: 88px;
+			height: 24px;
+		}
+
+		input.button:focus,
+		input.button:hover {
+			color: #FB9900;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<div id="login">
+			<form method="post">
+				<table style="padding: 5px;" cellpadding="5">
+					<tr>
+						<td colspan="2"><img id="logoFreedom" src="https://sistema.gruporoveri.com.br/imagens/logo_olos.png" /></td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+					</tr>
+					<tr align="left">
+						<td><span id="labelUser">Usuário:</span></td>
+						<td><input name="usuário" type="text" style="width:100px;" /></td>
+					</tr>
+					<tr align="left">
+						<td><span id="labelPassword">Senha.:</span></td>
+						<td><input name="senha" type="password" style="width:100px;" /></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" name="botão" value="OK" class="button" /></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span></span></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</center>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head id="Head">
+	<title>
+		Grupo Roveri
+	</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+		integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<style>
+		.Div-Borda-Arredondada {
+			border-radius: 10px;
+			border: 1.5px solid silver !important;
+			padding: 10px;
+			margin: 20px 0px 20px 0px;
+		}
+
+		.TituloPagina {
+			margin-top: 30px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14pt;
+		}
+
+
+		.Titulo {
+			margin-top: 20px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14pt;
+			margin-bottom: 10px;
+		}
+
+		.TituloCampo {
+			text-align: right;
+			padding-right: 10px;
+			font-weight: bold;
+			margin: auto 0;
+			vertical-align: central;
+		}
+
+		.ColunaDois {
+			padding-left: 20px;
+		}
+
+		.TextoInformativo {
+			font-style: italic;
+			text-align: center;
+			font-size: 10pt;
+			color: red;
+			margin-bottom: 5px;
+		}
+
+		.Paragrafo {
+			margin-top: 15px;
+			text-align: justify;
+		}
+
+		#fmCa {
+			width: 480px;
+			text-align: left;
+			border: 1px solid #ff6a00;
+			border-radius: 10px 10px;
+			margin: 15% auto;
+			padding: 5px;
+			background-color: #e5e5e5;
+		}
+
+		.css_linkbutton,
+		css_linkbutton:link,
+		.css_linkbutton:active,
+		.css_linkbutton:visited {
+			color: #9d521c;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		.css_linkbutton:hover {
+			color: #9d521c;
+			text-decoration: underline;
+			width: 200px;
+			cursor: pointer;
+		}
+
+		.glyphicon-calendar:before {
+			content: "\1f4c5";
+		}
+
+		.glyphicon-lock:before {
+			content: "\1f512";
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<div id="fmCa">
+			<div id="UpPanel">
+				<div class="TituloPagina">Grupo Roveri - Alteração de senha</div>
+				<table style="margin-top: 15px; height: 270px;">
+					<tr>
+						<td colspan="2">
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon1">
+									<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+								</span>
+								<input name="nome" type="text" class="form-control" placeholder="Nome Completo"
+									aria-describedby="basic-addon1" style="width:410px;" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">
+									<span class="glyphicon glyphicon-tower" aria-hidden="true"></span>
+								</span>
+								<input name="cpf" type="text" class="form-control" placeholder="Número do CPF"
+									aria-describedby="basic-addon1" style="width:175px;" />
+							</div>
+						</td>
+						<td style="padding-left: 20px;">
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon4">
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+								</span>
+								<input name="nascimento" type="date" maxlength="8" class="form-control" aria-describedby="basic-addon4"
+									style="width:175px;" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4">
+							<img src="https://sistema.gruporoveri.com.br/imagens/cadeado_grupo_roveri.png" />
+						</td>
+						<td style="padding-left: 20px;">
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon3">
+									<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+								</span>
+								<input name="senha_antiga" type="password" maxlength="8" disabled="disabled"
+									class="aspNetDisabled form-control" placeholder="Senha Atual" aria-describedby="basic-addon4"
+									style="width:175px;" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-left: 20px;">
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon5">
+									<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+								</span>
+								<input name="senha_nova" type="password" maxlength="8" class="form-control" placeholder="Nova Senha"
+									aria-describedby="basic-addon2" style="width:175px;" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-left: 20px;">
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon6">
+									<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+								</span>
+								<input name="senha_repete" type="password" maxlength="8" class="form-control"
+									placeholder="Confirma Nova Senha" aria-describedby="basic-addon3" style="width:175px;" />
+							</div>
+							<div class="TextoInformativo">8 caracteres</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: right">
+							<table style="border-collapse: collapse; display: inline;">
+								<td>
+									<a class="btn btn-primary">
+										<i aria-hidden="true" class="glyphicon glyphicon-refresh"></i>&nbsp;&nbsp;Alterar
+									</a>
+								</td>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<div class="TextoInformativo">Informe os dados para cadastro da nova senha</div>
+			</div>
+		</div>
+		</div>
+	</form>
+</body>
+
+</html>

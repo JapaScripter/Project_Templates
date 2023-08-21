@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		* {
+			/*display*/
+			position: relative;
+			margin: 0;
+			padding: 0;
+		}
+
+		#sc {
+			/*display*/
+			position: relative;
+			width: auto;
+			height: 55vw;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: 4vw 20vw;
+			padding: 0;
+			flex-flow: column nowrap;
+			background: url('./bg.jpg');
+			background-size: cover;
+			/* background: linear-gradient(160deg, #120826 5%, #302559 40%, #30588C 60%, #1EB7D9 95%, #22DDF2 100%); */
+			/*border*/
+			border-radius: 10vw;
+		}
+
+		.scIm {
+			/*display*/
+			display: flex;
+			position: relative;
+			width: 10vw;
+			height: auto;
+			margin: auto;
+			padding: 0;
+			padding-top: 1vw;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.scTt {
+			/*font*/
+			font-size: 2vw;
+			text-align: left;
+			text-shadow: 0 0 1vw #120826;
+			color: #FFFFFF;
+			/*display*/
+			position: relative;
+			width: auto;
+			height: auto;
+			margin: 0;
+			margin-top: 1vw;
+			padding: 0 5vw;
+		}
+
+		.scTx {
+			/*font*/
+			font-size: 1.25vw;
+			font-weight: 700;
+			text-align: justify;
+			text-shadow: 1vw 1vw 2vw #120826;
+			color: #FFFFFF;
+			/*display*/
+			position: relative;
+			width: auto;
+			height: auto;
+			margin: 4vw 0;
+			padding: 0 5vw;
+		}
+
+		.scLs {
+			/*font*/
+			font-size: 1.25vw;
+			text-align: left;
+			color: #FFFFFF;
+			/*display*/
+			position: relative;
+			width: auto;
+			height: auto;
+			margin: 0;
+			margin-top: 4vw;
+			margin-left: 5vw;
+			padding: 0 5vw;
+		}
+
+		.scIt {
+			/*font*/
+			font-size: 1.25vw;
+			text-align: left;
+			list-style-type: circle;
+			color: #FFFFFF;
+			/*display*/
+			position: relative;
+			width: 50%;
+			height: auto;
+			margin: 0;
+			margin-top: 1vw;
+			padding: 1vw;
+			background: #120826;
+			/*border*/
+			border: 0.1vw solid #FFFFFF;
+			border-radius: 1vw;
+		}
+	</style>
+</head>
+
+<body>
+	<section id="sc">
+		<img class="scIm" src="./Logo-Sigma-branco.png">
+		<h1 class="scTt">Olá {Nome}</h1>
+		<p class="scTx">Seu acesso foi solicitado com sucesso!<br>Para completar o processo, utilize as informações abaixo:
+		</p>
+		<ul class="scLs">
+			<li class="scIt">Nome: {Nome}</li>
+			<li class="scIt">E-mail: {Email}</li>
+			<li class="scIt">Senha: {Senha}</li>
+		</ul>
+		<p class="scTx">Tome cuidado com suas informações de segurança e se certifique de manter suas senhas protegidas.
+			Caso você não tenha solicitado acesso, recomendamos que altere sua senha imediatamente.</p>
+	</section>
+</body>
+
+</html>

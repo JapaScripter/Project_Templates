@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<!-- =====Head===== -->
+
+<head>
+	<meta charset="utf-8">
+	<title>Solu&ccedil;&atilde;o de Cr&eacute;dito Imobili&aacute;rio &ndash; CIWEB</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link href="./logo-caixa-favicon.png" rel="icon" type="image/png" alt="Icone Shape no Pé">
+	<link rel=stylesheet type=text/css href="./global.css">
+	<link rel=stylesheet type=text/css href="./sso.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script language="JavaScript" type="text/javascript" src="./funcoes.js"></script>
+	<script language="JavaScript" type="text/javascript" src="./funcoesh.js"></script>
+	<script language="JavaScript" type="text/javascript" src="./login.js"></script>
+	<script type="text/javascript">var idxBG = 1;</script>
+</head>
+<!-- =====Head===== -->
+<!-- =====Body===== -->
+
+<body aLink=#0061ff leftMargin=0 link=#0061ff topMargin=0 vLink=#0061ff onload="OnLoadBid()" onresize="OnResize()"
+	onselectstart="return false">
+	<div id=nav_WRAPER>
+		<div id=nav_HEADER>
+			<div id=nav_HEADERL>
+				<div id=navlogo><img src="./logo-caixa.png"></div>
+				<div id=navstripe></div>
+				<div id=navtitle>Solu&ccedil;&atilde;o de Cr&eacute;dito Imobili&aacute;rio &ndash; CIWEB</DIV>
+			</div>
+			<div id=nav_HEADERR>
+				<div id=navsigilo style="margin-right:20px;">#EXTERNO.RESTRITO</div>
+			</div>
+		</div>
+		<div id=nav_CONTAINER class="container ">
+			<div id=nav_CONTAINER_BLOCK class="container_hidden form-container">
+				<form id="frmLogin" name="frmLogin" method="post" autocomplete="off" action="/sso/"
+					onsubmit="return submeteForm();">
+					<div class="login-form">
+						<div class="form-title-bg">
+							<h3 class="form-title">Login CIWEB Administradoras</h3>
+						</div>
+						<div class="form-group">
+							<label>Usuário</label>
+							<input class="form-input" id="strInput1" name="strInput1" value="" type="text" maxlength="20"
+								autocomplete="off" placeholder="Informe sua matrícula de acesso">
+							<button type="submit" id="botaoLogin" class="login-button login-button-wd buttonL">Prosseguir<span
+									class="btn-next"><img src="./next.png"></span></button>
+							<span class="buttonR label-matricula-mrg"><a id="botaoVoltarLogin" href="/sso/revalidasenha"
+									class="btn-link">Trocar Senha</a>
+							</span>
+							<div id="loginLoading" class="loginLoading">
+								<div class="lds-ellipsis">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+						<input type="hidden" id="strTZ" name="strTZ" value="3">
+						<input type="hidden" id="strBid" name="strBid" value="092bc31f5febb5504d4298f54d0e63dc">
+						<input type="hidden" id="strTKN1" name="strTKN1" value="YdwYAT7MJLnqeCXed7+U7P7uVca38cpDE+1W3nMabpPfwi3DGOucyT40mmECySliKMHw8Huc
+	phHjhV+6D0bErFiYLQUkdjPxzfvLh3PQIEdFJnuPi5lb9REXAyg/E/Gedd84wz/YahCKmeCC
+	2XP+gtZWl+pVl4AifOq3j+CzV1ZO9SkpaIx2TofS0lyWBwLfpRQ331Nuy0Q1E3ZVojCLSfqf
+	8mRmP1xy3gGCYb8doIlJyCyu7n0Hu1RZWip/DlpFjCr90Yl/OjpVsXmrLXO8vTaSVEK/1g/V
+	0raBU3u9BylfGTxT/s9qlBKV+4XcnQPBB2qZf/v2ik4UqDi2KkVrgA==">
+						<input type="hidden" id="strTKN2" name="strTKN2" value="BK+mhSoo9VP/rWmDENCQpOQyFSy8fZBYhE/2hJJn+Ug3S763hc1OUL6RQHlXHeGUPKpum6fZ
+	XdrTqTDSCbcwOUxBI6WSMERqb8hMoSKLpDt8kHqb7/he7EAIwJzWeHXrgZ8np/RV56f1/PnO
+	Yc3hxDwF2zdh4ARvj/4x1ylRgFx3pajK064g9XIF2PnkhvxYlT9n7uhC7dl5KFPGoJhnMSoM
+	7LpR/r+jFhz0TlWlmBSYSujzwshtPrUuIHLjvoHSCX1xH2uFaQVtYSYzVaBIkO+NFRZcd0uX
+	wgogINfuL/aIRsgT1TtVdJsIXRMcVYKfRwaS99GAgf9KqfTLAGSmuw==">
+						<input type="hidden" id="strTKN3" name="strTKN3"
+							value="3615338b6f9a9ef366af0273a4804d590ec187bb140bd29af06baac8175be3ae6250baea486735e663dcf8e250f84af7ad7857592dd4a00254810a7514e9446d">
+						<input type="hidden" id="strTKN4" name="strTKN4"
+							value="deaf4ed35c15272285de1eb7c7f343afc16fdd7fb441cebb61f1feb7ecdbe63b27b845412615907a68abfd469185db1da93af80dc6dc5ab015012b9be1490507">
+					</div>
+					<p></p>
+					<div class="b-captcha">
+						<div class="g-recaptcha" data-sitekey="6Ld7nDcaAAAAABAYaiDWY98hIKo1uV8vXatKbf18">
+							<div style="width: 304px; height: 78px;">
+								<div><iframe title="reCAPTCHA"
+										src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Ld7nDcaAAAAABAYaiDWY98hIKo1uV8vXatKbf18&amp;co=aHR0cHM6Ly93d3cuY2l3ZWIuY2FpeGEuZ292LmJyOjQ0Mw..&amp;hl=pt-BR&amp;v=SglpK98hSCn2CroR0bKRSJl5&amp;size=normal&amp;cb=z1w905tj2djb"
+										width="304" height="78" role="presentation" name="a-5g9s5msgaqr1" frameborder="0" scrolling="no"
+										sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+								</div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+									style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+							</div><iframe style="display: none;"></iframe>
+						</div>
+					</div>
+					<div class="browser-info">
+						<p><span>Melhor visualizado nos navegadores Edge, Chrome e Firefox.</span></p>
+						<p><span>Otimizado para Resolução 1280x800 ou superior.</span></p>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id=nav_FOOTER>
+			<div class=login-links>
+				<p class=link-title>Outros Sistemas</p>
+				<ul class="link-list">
+					<li><a href="/ciweb/" target="_top">Concess&atilde;o</a></li>
+				</ul>
+			</div>
+			<div class=login-links></div>
+			<div class=login-links></div>
+			<div class=message-links></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var onloadCallback = function () {
+			alert("grecaptcha is ready!");
+		};
+	</script>
+</body>
+<!-- =====Body===== -->
+
+</html>

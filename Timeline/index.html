@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Linha do Tempo</title>
+	<link href="aos.css" rel="stylesheet" type="text/css" />
+	<!-- =====CSS Inside===== -->
+	<style>
+		/* =====Seção Linha do Tempo===== */
+		body {
+			background: url('./geralBg.jpg');
+		}
+
+		/* =====Seção Linha do Tempo===== */
+		#timeline {
+			/*display*/
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.timelineTitulo {
+			/*font*/
+			font-family: moskSemiBold;
+			font-size: var(--txt4-ft-sz);
+			font-weight: 700;
+			text-align: center;
+			text-decoration: none;
+			text-shadow: 0.3vw 0.3vw 0vw rgba(13, 13, 13, 0.5);
+			list-style-type: none;
+			letter-spacing: 0.1vw;
+			line-height: 1.5;
+			word-spacing: 0.1vw;
+			word-wrap: break-word;
+			color: #FFFFFF;
+			/*display*/
+			display: flex;
+			position: relative;
+			width: 100%;
+			height: auto;
+			margin: 0;
+			margin-top: 10vw;
+			padding: 0;
+			align-items: center;
+			justify-content: center;
+			z-index: 1 !important;
+		}
+
+		.timelineZindex {
+			/*display*/
+			position: absolute;
+			width: 100%;
+			height: 10vw;
+			z-index: 1;
+			background: #FFFFFF;
+		}
+
+		.timelineContainer {
+			/*display*/
+			display: flex;
+			height: 20vw;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.timelineContent {
+			/*display*/
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.timelineContentTitle {
+			/*font*/
+			font-family: moskBold;
+			color: #FFFFFF;
+		}
+
+		.timelineSubIcon {
+			/*display*/
+			position: relative;
+			width: 0.5vw;
+			height: 1vw;
+			left: 0.5vw;
+			clip-path: polygon(0 0, 100% 50%, 0 100%);
+			background: #FFFFFF;
+			/*border*/
+			border-radius: 1vw;
+		}
+
+		.timelineIcon {
+			/*display*/
+			position: relative;
+			width: 5vw;
+			height: 10vw;
+			clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0% 100%, 0% 70%, 25% 50%, 0 30%);
+			z-index: 2;
+			/*cursor*/
+			cursor: pointer;
+		}
+
+		.timelineLine {
+			/*display*/
+			width: 4vw;
+			/*border*/
+			border-top: 0.3vw dashed #F5F5DC;
+		}
+
+		@keyframes slideLeft {
+			0% {
+				left: 100vw;
+			}
+
+			100% {
+				left: 0vw;
+			}
+		}
+
+		@keyframes spin90 {
+			0% {
+				margin-top: 1vw;
+				transform: scale(1) rotate(0);
+			}
+
+			100% {
+				margin-top: 1vw;
+				transform: scale(0.5) rotate(90deg);
+			}
+		}
+
+		.slideLeft {
+			/*display*/
+			animation: slideLeft 0.9s forwards;
+		}
+
+		.spin90 {
+			/*display*/
+			animation: spin90 0.9s forwards;
+		}
+
+		.timelineNew {
+			/*display*/
+			position: relative;
+			display: block;
+			width: 95%;
+			height: 30vw;
+			margin: auto;
+			margin-top: 5vw;
+			margin-bottom: 5vw;
+			padding: 1vw;
+			background: rgba(13, 13, 13, 0.5);
+			/*border*/
+			border-radius: 1vw;
+			box-shadow: 0 0.1vw 0.5vw 0 rgba(255, 255, 255, 1);
+		}
+
+		.timelineSubNew {
+			/*display*/
+			display: flex;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.timelineDivLeft {
+			/*font*/
+			font-family: moskBold;
+			font-size: 10vw;
+			text-align: center;
+			text-shadow: 0.3vw 0.3vw 0vw rgba(13, 13, 13, 0.5);
+			color: #FFFFFF;
+			/*display*/
+			display: flex;
+			width: 40%;
+			height: 100%;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.timelineDivRight {
+			/*display*/
+			display: flex;
+			width: 60%;
+			height: 100%;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.timelineImage {
+			/*display*/
+			display: flex;
+			width: 30vw;
+			height: 20vw;
+			margin: auto;
+			margin-top: 0;
+			margin-bottom: 0;
+			justify-content: center;
+			align-items: center;
+			/*border*/
+			border-radius: 1vw;
+		}
+
+		.timelineText {
+			/*font*/
+			font-family: moskBold;
+			font-size: 1.5vw;
+			text-align: justify;
+			text-align-last: center;
+			color: #FFFFFF;
+		}
+
+		/* =====Seção Linha do Tempo===== */
+	</style>
+	<!-- =====CSS Inside===== -->
+</head>
+
+<body>
+	<!-- =====Seção Linha do Tempo===== -->
+	<section id="timeline" data-aos="fade-up" data-aos-delay="500">
+		<h1 class="timelineTitulo" data-aos="fade-up" data-aos-delay="0">Linha do Tempo</h1>
+		<div class="timelineContainer" data-aos="fade-up" data-aos-delay="500">
+			<div class="timelineContent">
+				<div style="display: flex; align-items: center;">
+					<h1 class="timelineContentTitle" style="text-shadow: 0.3vw 0.3vw 0vw rgba(13, 13, 13, 0.5);">2018</h1>
+					<div class="timelineSubIcon"></div>
+				</div>
+				<div class="timelineIcon" style="background: linear-gradient(90deg,#DA873A,#EFC589)"></div>
+			</div>
+			<div class="timelineLine" data-aos="fade-up" data-aos-delay="500"></div>
+			<div class="timelineContent">
+				<h1 class="timelineContentTitle" style="text-shadow: 0.3vw 0.3vw 0vw rgba(13, 13, 13, 0.5);">2019</h1>
+				<div class="timelineSubIcon"></div>
+				<div class="timelineIcon" style="background: linear-gradient(90deg,#B57776,#E2C5C0)"></div>
+			</div>
+			<div class="timelineLine" data-aos="fade-up" data-aos-delay="500"></div>
+			<div class="timelineContent">
+				<h1 class="timelineContentTitle" style="text-shadow: 0.3vw 0.3vw 0vw rgba(13, 13, 13, 0.5);">2020</h1>
+				<div class="timelineSubIcon"></div>
+				<div class="timelineIcon" style="background: linear-gradient(90deg,#444646,#AAAAAA)"></div>
+			</div>
+			<div class="timelineLine" data-aos="fade-up" data-aos-delay="500"></div>
+			<div class="timelineContent">
+				<h1 class="timelineContentTitle" style="text-shadow: 0.3vw 0.3vw 0vw rgba(13, 13, 13, 0.5);">2021</h1>
+				<div class="timelineSubIcon"></div>
+				<div class="timelineIcon" style="background: linear-gradient(90deg,#BA6821,#E2BD47)"></div>
+			</div>
+			<div class="timelineLine" data-aos="fade-up" data-aos-delay="500"></div>
+			<div class="timelineContent">
+				<h1 class="timelineContentTitle" style="text-shadow: 0.3vw 0.3vw 0vw rgba(13, 13, 13, 0.5);">2022</h1>
+				<div class="timelineSubIcon"></div>
+				<div class="timelineIcon" style="background: linear-gradient(90deg,#BF5244,#E4A697)"></div>
+			</div>
+			<div class="timelineLine" data-aos="fade-up" data-aos-delay="500"></div>
+			<div class="timelineContent">
+				<h1 class="timelineContentTitle" style="text-shadow: 0.3vw 0.3vw 0vw rgba(13, 13, 13, 0.5);">
+					<script>
+						var anoAtual = new Date();
+						var ano = anoAtual.getFullYear();
+						document.write(ano);
+					</script>
+				</h1>
+				<div class="timelineSubIcon"></div>
+				<div class="timelineIcon" style="background: linear-gradient(90deg,#2F3130,#6D6D6D)"></div>
+			</div>
+		</div>
+	</section>
+	<section id="sobre"></section>
+	<!-- =====Seção Linha do Tempo===== -->
+
+	<!-- =====Script Transições===== -->
+	<script src="./aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<!-- =====Script Transições===== -->
+
+	<!-- =====Script Linha do Tempo===== -->
+	<script>
+		/* =====Variáveis===== */
+		var tlC = document.querySelectorAll('.timelineContent');
+		var tlI = document.querySelectorAll('.timelineIcon');
+		var sobre = document.getElementById('sobre');
+		var texts = ['Texto1', 'Texto2', 'Texto3', 'Texto4', 'Texto5', 'Texto6'];
+		var titles = ['2018', '2019', '2020', '2021', '2022', new Date().getFullYear()];
+		var images = ['./geralBg.jpg', './geralBg.jpg', './geralBg.jpg', './geralBg.jpg', './geralBg.jpg', './geralBg.jpg',];
+		/* =====Variáveis===== */
+
+		/* =====Função Animação timelineIcon===== */
+		for (var j = 0; j < tlI.length; j++) {
+			tlI[j].addEventListener('click', function () {
+				for (var k = 0; k < tlI.length; k++) {
+					if (tlI[k] !== this) {
+						tlI[k].classList.remove('spin90');
+					}
+					else {
+						this.classList.add('spin90');
+					}
+				}
+			});
+		}
+		/* =====Função Animação timelineIcon===== */
+
+		/* =====Função Criar Div===== */
+		for (var i = 0; i < tlI.length; i++) {
+			tlI[i].addEventListener('click', function () {
+				var index = Array.from(tlI).indexOf(this);
+
+				/* =====Exclui Div Caso Exista===== */
+				var timelineExclude = document.querySelector('.timelineExist');
+				if (timelineExclude) {
+					timelineExclude.remove();
+				}
+				/* =====Exclui Div Caso Exista===== */
+
+				/* =====Cria Div timelineNew===== */
+				var timelineNew = document.createElement('div');
+				timelineNew.classList.add('timelineNew', 'timelineExist', 'slideLeft');
+				/* =====Cria Div timelineNew===== */
+
+
+				/* =====Cria Div timelineSubNew===== */
+				var timelineSubNew = document.createElement('div');
+				timelineSubNew.classList.add('timelineSubNew');
+				/* =====Cria Div timelineSubNew===== */
+
+
+				/* =====Cria Div timelineDivLeft===== */
+				var timelineDivLeft = document.createElement('h1');
+				timelineDivLeft.innerHTML = titles[index];
+				timelineDivLeft.classList.add('timelineDivLeft');
+				/* =====Cria Div timelineDivLeft===== */
+
+
+				/* =====Cria Div timelineDivRight===== */
+				var timelineDivRight = document.createElement('div');
+				timelineDivRight.classList.add('timelineDivRight');
+
+				var timelineImage = document.createElement('img');
+				timelineImage.src = images[index];
+				timelineImage.classList.add('timelineImage');
+
+				var timelineText = document.createElement('p');
+				timelineText.innerHTML = texts[index];
+				timelineText.classList.add('timelineText');
+				/* =====Cria Div timelineDivRight===== */
+
+				/* =====Renderiza os Elementos===== */
+				timelineNew.appendChild(timelineSubNew);
+				timelineSubNew.appendChild(timelineDivLeft);
+				timelineSubNew.appendChild(timelineDivRight);
+				timelineDivRight.appendChild(timelineImage);
+				timelineDivRight.appendChild(timelineText);
+				sobre.parentNode.insertBefore(timelineNew, sobre);
+				/* =====Renderiza os Elementos===== */
+			});
+		}
+		/* =====Função Criar Div===== */
+	</script>
+	<!-- =====Script Linha do Tempo===== -->
+</body>
+
+</html>

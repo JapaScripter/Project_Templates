@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<title>SonicWall - Authentication</title>
+	<style>
+		#admin_reauth_text {
+			clear: both;
+		}
+		body,
+		p {
+			font-family: Tahoma, Arial, Verdana, sans-serif;
+			font-size: 13px;
+			color: #000000;
+			line-height: 15px;
+		}
+
+	a {
+		color: #003399;
+	}
+	
+	a:hover {
+		color: #0066CC;
+		text-decoration: underline;
+	}
+	
+	input:not([type="image"]),
+	select,
+	button,
+	textarea {
+		box-sizing: border-box !important;
+	}
+			
+	.snwl-btn {
+		cursor: pointer;
+		height: 32px;
+		padding: 0 16px 0 16px;
+		border-radius: 3px;
+		color: #555;
+		background-color: #eee;
+		border: 1px solid #999;
+		min-width: 72px;
+		text-transform: uppercase;
+	}
+	
+	.snwl-btn:hover,
+	.snwl-btn:focus {
+		color: #555;
+		background-color: #ccc;
+		border: 1px solid #2184c7;
+	}
+	
+	.snwl-btn:active {
+		color: #555;
+		background-color: #bbb;
+		border: 1px solid #2184c7;
+	}
+	
+	.snwl-btn:disabled {
+		color: rgba(0, 0, 0, 0.26);
+		background-color: rgba(0, 0, 0, 0.12);
+		border: 1px solid #ccc;
+	}
+	
+	.snwl-btn+.snwl-btn {
+		margin-left: 16px;
+	}
+	
+	.snwl-btn:focus {
+		outline: #2184c7 auto 1px;
+	}
+	
+	.label {
+		font-family: Tahoma, Arial, Verdana, sans-serif;
+		font-size: 11px;
+		font-weight: normal;
+		color: #2e2f33;
+	}
+	
+	.vgap24 {
+		width: 100%;
+		height: 24px;
+		clear: both;
+	}
+	
+	.vgap32 {
+		width: 100%;
+		height: 32px;
+		clear: both;
+	}
+	
+	.vgap48 {
+		width: 100%;
+		height: 48px;
+		clear: both;
+	}
+	
+	.login_bg {
+		background-color: #005d84;
+	}
+	
+	.login_outer {
+		width: 323px;
+		margin: 0 auto 0 auto;
+		margin-top: 140px;
+		background-color: #ffffff;
+		clear: both;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+	}
+	
+	.login_inner {
+		padding: 0 24px 24px 24px;
+		min-height: 206px;
+	}
+	
+	.login_footer {
+		width: 323px;
+		margin: 0 auto 0 auto;
+		margin-top: 16px;
+		clear: both;
+		color: rgba(255, 255, 255, 0.60);
+		font-weight: 11px;
+	}
+	
+	.login_logo {
+		text-align: center;
+	}
+	
+	.login_prodname {
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 1.2;
+		color: #777;
+		text-align: center;
+	}
+	
+	.error_box {
+		width: 100%;
+		height: 48px;
+		color: #000000;
+		font-weight: bold;
+		background-image: url(exclamation_24.png);
+		background-repeat: no-repeat;
+		text-align: left;
+		clear: both;
+	}
+	
+	.error_text {
+		margin-left: 32px;
+		padding-top: 2px;
+		padding-right: 10px;
+		padding-bottom: 8px;
+	}
+	
+	.formLabel {
+		width: 100%;
+		clear: both;
+		font-size: 13px;
+		margin-bottom: 11px;
+	}
+	
+	.formInputField {
+		width: 100%;
+	}
+	
+	.formComboBox {
+		width: 100%;
+	}
+	
+	.btnRow {
+		width: 100%;
+		clear: both;
+		text-align: right;
+	}
+	
+	.login_footer a {
+		color: rgba(255, 255, 255, 0.60);
+	}
+	
+	.login_footer a:active {
+		color: rgba(255, 255, 255, 0.75);
+	}
+	
+	</style>
+</head>
+<body class="login_bg">
+	<form name="standardPass" onsubmit="return(processButn());" action="auth.cgi" method="POST" target="authTgtFrm">
+		<input TYPE="HIDDEN" NAME="param1" VALUE="" disabled>
+		<input TYPE="HIDDEN" NAME="param2" VALUE="0B3CD2AD73DC9FDA90A7E53CCAE3F22C" disabled>
+		<input type="hidden" name="id" value="70" size="50"/>
+		<div id="login_box" class="login_outer">
+			<div class="login_inner">
+				<div class="vgap48"></div>
+				<div class="login_logo">
+					<img src="logo_sw.png">
+				</div>
+				<div class="login_prodname">
+					Network Security Appliance
+				</div>
+				<div class="vgap48"></div>
+				<div id="error_box" class="error_box" style="display:none;">
+					<div id="error_text" class="error_text">
+					</div>
+				</div>
+				<div id="admin_reauth_text" style="display:none;">
+					Please enter your password to begin management:
+				</div>
+				<div class="formLabel">
+					Username
+				</div>
+				<input type="text" id="userName" name="userName" value="" maxlength="128" autocomplete="off" class="formInputField">
+				<div class="vgap24"></div>
+				<div class="formLabel">
+					Password
+				</div>
+				<input type="password" name="pwd" value="" maxlength="63" autocomplete="off" class="formInputField">
+				<div id="langCondition">
+				<div class="vgap24"></div>
+				<div class="formLabel">
+					Language
+				</div>
+				<select id="langSel" name="select2" class="formComboBox">
+					<option>English</option>
+				</select>
+				</div>
+				<div class="vgap32"></div>
+				<div class="btnRow">
+					<input type="submit" class="snwl-btn" name="Submit" value="LOG IN">
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
+
